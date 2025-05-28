@@ -4,106 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perkenalan Diri</title>
-    <style>
-        body{
-            font-family: "WDXL Lubrifont TC", sans-serif;
-            color: #ffffff;
-        }
-        h1{
-            font-size: 30px;
-            color: #ffffff;
-        }
-        p,h2{
-            color: #ffffff;
-        }
-        .deskripsi{
-            margin-top: 50px;
-            margin-bottom: 20px;
-        }
-        .hero-section{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            background: black;
-            justify-content: center; 
-        }
-        .container-button{
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-        }
-        button{
-            background: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        .me-button{
-            border: #ffffff 1px solid;
-            background: black;
-            color: #ffffff;
-        }
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .about-me{
-            background: black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        h2{
-            margin-bottom: 300px;
-        }
-        .paragraph{
-            text-align: center;
-        }
-        .site{
-            background: black;
-            padding: 100px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .site h2{
-            color: white;
-            margin: 0;
-        }
-        .site-card{
-            display: flex;
-            flex-direction: row;
-            margin-top: 50px;
-            gap: 5px;
-        }
-        .card{
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            background: gray;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero-section">
+    <div class="nav">
+        <h3>Annas Haidar Yassar</h3>
+        <div class="nav-item">
+            <a href="#home">home</a>
+            <a href="#about-me">about me</a>
+            <a href="#skills">skills</a>
+            <a href="#showcase">showcase</a>
+            <a href="#contact">contact</a>
+        </div>
+    </div>
+    <div class="hero-section" id="home">
         <h1>Annas Haidar Yassar</h1>
         <p>Siswa Lulusan AL MADINAH</p>
         <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, incidunt.</p>
         <div class="container-button">
             <button class="me-button">about me</button>
-            <button>contact me</button>
+            <button class="contact-button">contact me</button>
         </div>
     </div>
-    <div class="about-me">
+    <div class="about-me" id="about-me">
         <h2>About Me</h2>
         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolor corporis delectus cupiditate placeat numquam similique odio ad culpa, illo recusandae doloribus molestiae, nihil asperiores maxime iste hic ab iure sit ut! Quaerat laudantium id sed adipisci animi soluta commodi, mollitia sint autem suscipit distinctio dolore ut odio saepe illo iusto tempora deleniti nobis expedita laborum et. Cumque placeat obcaecati illum debitis, ipsa consequatur aspernatur, doloremque culpa porro similique magnam. Placeat nobis ipsa, tenetur possimus cupiditate commodi, consectetur aut officia nemo iste soluta iusto fuga doloremque explicabo cum impedit praesentium non in eum veritatis nihil, atque consequatur dicta? Consequatur totam, error, omnis quisquam culpa quidem ipsam magni repellendus ex explicabo neque reiciendis atque voluptas temporibus voluptate dolores tempora! Minima debitis ipsam at odit eligendi doloribus ab ratione quibusdam soluta provident nemo repellat quam, fuga dicta harum! Voluptates vero, assumenda molestias quos odio quia similique blanditiis, soluta, sequi explicabo impedit possimus enim ducimus? Illum iure ducimus excepturi, aperiam minima cumque possimus nam accusamus a. Odio alias ea inventore velit aperiam veritatis repellendus maiores consequuntur dolor, animi dolores tenetur voluptatibus amet fuga? Vel tempora ad similique minima recusandae magni doloribus? Earum, ducimus! Cupiditate eveniet voluptatem corrupti quasi sapiente vel, quae, ipsa soluta a sint officia optio porro quidem blanditiis similique accusantium itaque praesentium, deserunt possimus numquam cum eaque veniam rem? Velit, nulla nemo accusantium, id, esse cum facere deserunt rerum odio saepe totam pariatur aperiam adipisci animi consectetur mollitia. Soluta omnis dolorum nam eos corporis ad a provident dolor vitae! Porro, similique!</p>
     </div>
-    <div class="site">
+    <div class="site" id="skills">
         <h2>Inside this site</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, itaque.</p>
         <div class="site-card">
@@ -118,6 +48,47 @@
             <div class="card">
                 <h3>HTML</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem molestias saepe, incidunt animi a rerum vitae corrupti tempora adipisci deleniti.</p>
+            </div>
+        </div>
+    </div>
+    <div class="my-project" id="showcase">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <div class="card-2">
+                <h4>Project Title 1</h4>
+                <p class="project-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim assumenda blanditiis debitis temporibus veritatis aperiam sequi neque adipisci nam maiores.</p>
+                <div class="button-container-2">
+                    <button class="button-1">Button 1</button>
+                    <button class="button-2">Button 2</button>
+                    <button class="button-3">Button 3</button>
+                </div>
+            </div>
+            <div class="card-2">
+                <h4>Project Title 1</h4>
+                <p class="project-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim assumenda blanditiis debitis temporibus veritatis aperiam sequi neque adipisci nam maiores.</p>
+                <div class="button-container-2">
+                    <button class="button-1">Button 1</button>
+                    <button class="button-2">Button 2</button>
+                    <button class="button-3">Button 3</button>
+                </div>
+            </div>
+            <div class="card-2">
+                <h4>Project Title 1</h4>
+                <p class="project-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim assumenda blanditiis debitis temporibus veritatis aperiam sequi neque adipisci nam maiores.</p>
+                <div class="button-container-2">
+                    <button class="button-1">Button 1</button>
+                    <button class="button-2">Button 2</button>
+                    <button class="button-3">Button 3</button>
+                </div>
+            </div>
+            <div class="card-2">
+                <h4>Project Title 1</h4>
+                <p class="project-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim assumenda blanditiis debitis temporibus veritatis aperiam sequi neque adipisci nam maiores.</p>
+                <div class="button-container-2">
+                    <button class="button-1">Button 1</button>
+                    <button class="button-2">Button 2</button>
+                    <button class="button-3">Button 3</button>
+                </div>
             </div>
         </div>
     </div>
